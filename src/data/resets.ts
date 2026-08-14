@@ -15,8 +15,8 @@ export const Resets: Record<string, {
   reset(): void
 }> = {
   seeds: {
-    get reached() { return player.discovered_upgrades['L\\6'] && Decimal.gte(player.leaves, 1e7) },
-
+    get reached() { return player.discovered_upgrades['L\\6'] && Decimal.gte(player.leaves, 5e6) },
+    
     get description() {
       return this.reached ? `Decompolize your tree for <b>${format(temp.currencies.seeds, 0)}</b> Seeds` : `Reach <b>${format(1e7)}</b> Leaves`
     },
