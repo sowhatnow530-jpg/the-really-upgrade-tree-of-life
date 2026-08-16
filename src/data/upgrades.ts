@@ -273,7 +273,7 @@ export const Upgrades: Record<string, {
     cost: ['leaves', 0],
   },
   "L\\1": {
-    get description() { return `<b>${formatMult(2)}</b> to Leaves.` },
+    get description() { return `<b>${formatMult(999)}</b> to Leaves.` },
     branch: ["L\\0"],
 
     cost: ['leaves', 10],
@@ -282,7 +282,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'leaves',
-      calc: () => 2,
+      calc: () => 999,
     }),
   },
   "L\\2": {
